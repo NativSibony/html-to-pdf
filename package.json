@@ -1,0 +1,60 @@
+{
+  "name": "html-pdf-converter",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/html-pdf-converter.umd.cjs",
+  "module": "./dist/html-pdf-converter.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/html-pdf-converter.js",
+      "require": "./dist/html-pdf-converter.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Nativ Sibony (https://github.com/nativsibony)",
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf dist && tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^22.13.9",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.25.0",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.0"
+  },
+  "description": "Convert HTML elements to PDF using html2canvas and jsPDF. Supports custom margins, quality settings, and Web Workers for efficient processing.",
+  "keywords": [
+    "html",
+    "pdf",
+    "html2canvas",
+    "jspdf",
+    "html-to-pdf",
+    "html2pdf",
+    "convert html to pdf",
+    "pdf generator",
+    "web pdf conversion",
+    "html element to pdf",
+    "client-side pdf creation"
+  ]
+}
