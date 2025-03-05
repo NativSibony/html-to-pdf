@@ -1,7 +1,7 @@
 {
   "name": "html-to-pdfx",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "main": "./dist/html-to-pdfx.umd.cjs",
   "module": "./dist/html-to-pdfx.js",
