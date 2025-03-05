@@ -1,7 +1,7 @@
 {
-  "name": "html-to-pdfx",
+  "name": "@html-to-pdf/html-to-pdf",
   "private": false,
-  "version": "0.1.3",
+  "version": "0.1.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -16,6 +16,10 @@
     "lint": "eslint .",
     "format": "prettier --write ."
   },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@types/node": "^22.13.9",
@@ -29,20 +33,15 @@
     "vite": "^6.2.0",
     "vite-plugin-dts": "^4.5.3"
   },
-  "dependencies": {
-    "html-to-pdfx": "file:html-to-pdfx-0.1.2.tgz",
-    "html2canvas": "^1.4.1",
-    "jspdf": "^3.0.0"
-  },
   "description": "Convert HTML elements to PDF using html2canvas and jsPDF. Supports custom margins, quality settings, and Web Workers for efficient processing.",
   "author": "Nativ Sibony (https://github.com/nativsibony)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NativSibony/html-to-pdfx.git"
+    "url": "git+https://github.com/NativSibony/html-to-pdf.git"
   },
   "bugs": {
-    "url": "https://github.com/NativSibony/html-to-pdfx.git/issues"
+    "url": "https://github.com/NativSibony/html-to-pdf.git/issues"
   },
   "keywords": [
     "html",
