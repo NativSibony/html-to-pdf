@@ -2,22 +2,13 @@
   "name": "html-to-pdfx",
   "private": false,
   "version": "0.1.2",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "type": "module",
-  "main": "./dist/html-to-pdfx.umd.cjs",
-  "module": "./dist/html-to-pdfx.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/html-to-pdfx.js",
-      "require": "./dist/html-to-pdfx.umd.cjs"
-    }
-  },
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "dev": "vite",
     "build": "rm -rf dist && tsc && vite build",
@@ -39,6 +30,7 @@
     "vite-plugin-dts": "^4.5.3"
   },
   "dependencies": {
+    "html-to-pdfx": "file:html-to-pdfx-0.1.2.tgz",
     "html2canvas": "^1.4.1",
     "jspdf": "^3.0.0"
   },
