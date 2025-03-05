@@ -1,26 +1,25 @@
-# html-to-pdfx
+# html2pdfx
 
-html-to-pdfx is a lightweight JavaScript library that allows you to convert HTML elements into PDF documents using `html2canvas` and `jsPDF`. This library provides an easy way to generate and download PDFs directly from your web application.
+html2pdfx is a lightweight JavaScript library that allows you to convert HTML elements into PDF documents using `html2canvas` and `jsPDF`. This library provides an easy way to generate and download PDFs directly from your web application.
 
 ## Features
 
 - Convert any HTML element to a PDF file
 - Supports custom margins, quality settings, and jsPDF options
 - Allows printing or downloading the generated PDF
-- Uses Web Workers for efficient processing
 
 ## Installation
 
-You can install `html-to-pdfx` via npm:
+You can install `html2pdfx` via npm:
 
 ```sh
-npm install html-to-pdfx
+npm install html2pdfx
 ```
 
 or using yarn:
 
 ```sh
-yarn add html-to-pdfx
+yarn add html2pdfx
 ```
 
 ## Usage
@@ -28,7 +27,7 @@ yarn add html-to-pdfx
 ### Importing the Library
 
 ```typescript
-import { convert } from 'html-to-pdfx';
+import { convert } from 'html2pdfx';
 ```
 
 ### Basic Example

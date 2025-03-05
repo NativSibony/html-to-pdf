@@ -1,11 +1,27 @@
-import { jsPDF } from 'jspdf';
-import { MessageData } from './types';
-import { findBlankRow, loadImageBitmap, offscreenCanvasToDataURL } from './utils/worker.utils';
-import { DEFAULT_MARGIN } from './constants';
+import jsPDF from 'jspdf';
+import { ConversionData, ConvertOptions } from '../types';
+import { findBlankRow, loadImageBitmap, offscreenCanvasToDataURL } from '../utils/converters.utils';
+import { DEFAULT_MARGIN } from '../constants';
+import { createTemporaryAbsoluteElement } from '../utils/main.utils';
+import html2canvas from 'html2canvas';
 
-self.addEventListener('message', async (event: MessageEvent) => {
+export const convertToCanvasDataUrl = async (element: HTMLElement, options: ConvertOptions) => {
+  const { clonedElement, addToDom, removeFromDom } = createTemporaryAbsoluteElement(
+    element,
+    options?.forceElementWidth,
+  );
+
+  addToDom();
+  const canvas = await html2canvas(clonedElement, { ...options.html2canvasOptions });
+  const dataUrl = canvas.toDataURL('image/png', options.quality);
+  removeFromDom();
+
+  return { dataUrl, width: canvas.width, height: canvas.height };
+};
+
+export const convertToPDF = async (data: ConversionData) => {
   try {
-    const { canvasData, options } = event.data as MessageData;
+    const { canvasData, options } = data;
     const { dataUrl, height, width } = canvasData;
     const { jsPDFOptions, margin } = options;
 
@@ -58,8 +74,8 @@ self.addEventListener('message', async (event: MessageEvent) => {
     }
 
     const pdfBlob = pdf.output('blob');
-    self.postMessage({ status: 'success', pdfBlob });
+    return pdfBlob;
   } catch (error) {
-    self.postMessage({ status: 'error', message: (error as Error).message });
+    return Error((error as Error).message);
   }
-});
+};

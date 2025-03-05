@@ -1,5 +1,5 @@
 {
-  "name": "@html-to-pdf/html-to-pdf",
+  "name": "html2pdfx",
   "private": false,
   "version": "0.1.0",
   "main": "dist/index.cjs.js",
@@ -33,15 +33,15 @@
     "vite": "^6.2.0",
     "vite-plugin-dts": "^4.5.3"
   },
-  "description": "Convert HTML elements to PDF using html2canvas and jsPDF. Supports custom margins, quality settings, and Web Workers for efficient processing.",
+  "description": "Convert HTML elements to PDF using html2canvas and jsPDF. Supports custom margins & quality settings.",
   "author": "Nativ Sibony (https://github.com/nativsibony)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NativSibony/html-to-pdf.git"
+    "url": "git+https://github.com/NativSibony/html2pdfx.git"
   },
   "bugs": {
-    "url": "https://github.com/NativSibony/html-to-pdf.git/issues"
+    "url": "https://github.com/NativSibony/html2pdfx.git/issues"
   },
   "keywords": [
     "html",

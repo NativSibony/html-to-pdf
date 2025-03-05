@@ -1,7 +1,7 @@
 import { Options } from 'html2canvas';
 import { jsPDFOptions } from 'jspdf';
 
-export type MessageData = {
+export type ConversionData = {
   canvasData: CanvasData;
   options: ConvertOptions;
 };
