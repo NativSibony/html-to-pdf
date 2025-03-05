@@ -1,4 +1,7 @@
-# html2pdfx
+# 🚀 html2pdfx
+
+[![npm package](https://img.shields.io/npm/v/html2pdfx/latest.svg)](https://www.npmjs.com/package/html2pdfx)
+[![npm downloads](https://img.shields.io/npm/dm/html2pdfx.svg)](https://www.npmjs.com/package/html2pdfx)
 
 html2pdfx is a lightweight JavaScript library that allows you to convert HTML elements into PDF documents using `html2canvas` and `jsPDF`. This library provides an easy way to generate and download PDFs directly from your web application.
 
@@ -8,7 +11,7 @@ html2pdfx is a lightweight JavaScript library that allows you to convert HTML el
 - Supports custom margins, quality settings, and jsPDF options
 - Allows printing or downloading the generated PDF
 
-## Installation
+## 📦 Installation
 
 You can install `html2pdfx` via npm:
 
@@ -22,7 +25,7 @@ or using yarn:
 yarn add html2pdfx
 ```
 
-## Usage
+## 🔨 Usage
 
 ### Importing the Library
 
@@ -63,19 +66,15 @@ const { save } = await convert({
 save('custom-document.pdf');
 ```
 
-## Options
+## ⚙️ Options
 
 | Property             | Type                               | Description                                   |
 | -------------------- | ---------------------------------- | --------------------------------------------- |
 | `margin`             | `[number, number, number, number]` | Set custom margins for the PDF document.      |
-| `quality`            | `number` (0 to 1)                  | Adjusts image quality when rendering the PDF. |
+| `quality`            | `number` (0.0 to 1.0)              | Adjusts image quality when rendering the PDF. |
 | `forceElementWidth`  | `number`                           | Forces a specific width for the HTML element. |
 | `jsPDFOptions`       | `jsPDFOptions`                     | Configuration options for jsPDF.              |
-| `html2canvasOptions` | `Partial<Options>`                 | Options for html2canvas rendering.            |
-
-## Demo
-
-[View Demo](#) (Coming Soon)
+| `html2canvasOptions` | `Html2CanvasOptions`               | Options for html2canvas rendering.            |
 
 ## License
 
@@ -84,3 +83,8 @@ MIT License
 ---
 
 Created by [Nativ Sibony](https://github.com/nativsibony)
+
+## Roadmap
+
+- [ ] Support Hyperlinks
+- [ ] Remove weird line on top of new pages
