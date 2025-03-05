@@ -7,7 +7,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, './src/index.ts'),
       name: 'HTML PDF Converter',
-      fileName: 'html2pdf-converter',
+      fileName: 'html-to-pdfx',
     },
     rollupOptions: {
       output: {

@@ -1,15 +1,15 @@
 {
-  "name": "html2pdf-converter",
+  "name": "html-to-pdfx",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
-  "main": "./dist/html2pdf-converter.umd.cjs",
-  "module": "./dist/html2pdf-converter.js",
+  "main": "./dist/html-to-pdfx.umd.cjs",
+  "module": "./dist/html-to-pdfx.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/html2pdf-converter.js",
-      "require": "./dist/html2pdf-converter.umd.cjs"
+      "import": "./dist/html-to-pdfx.js",
+      "require": "./dist/html-to-pdfx.umd.cjs"
     }
   },
   "files": [
@@ -47,10 +47,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NativSibony/html2pdf-converter.git"
+    "url": "git+https://github.com/NativSibony/html-to-pdfx.git"
   },
   "bugs": {
-    "url": "https://github.com/NativSibony/html2pdf-converter.git/issues"
+    "url": "https://github.com/NativSibony/html-to-pdfx.git/issues"
   },
   "keywords": [
     "html",
