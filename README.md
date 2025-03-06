@@ -86,5 +86,7 @@ Created by [Nativ Sibony](https://github.com/nativsibony)
 
 ## Roadmap
 
-- [ ] Support Hyperlinks
+- [x] Support Hyperlinks
 - [ ] Remove weird line on top of new pages
+- [ ] Add more options
+- [ ] Fix width issue when forceElementWidth is not set

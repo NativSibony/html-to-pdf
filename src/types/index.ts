@@ -4,6 +4,7 @@ import { jsPDFOptions } from 'jspdf';
 export type ConversionData = {
   canvasData: CanvasData;
   options: ConvertOptions;
+  hyperlinks?: HyperlinkData[];
 };
 
 export type Convert = {
@@ -17,6 +18,11 @@ export type ConvertOptions = {
   forceElementWidth?: number;
   jsPDFOptions?: jsPDFOptions;
   html2canvasOptions?: Partial<Options>;
+};
+
+export type HyperlinkData = {
+  href: string;
+  rect: { x: number; y: number; width: number; height: number };
 };
 
 export type CanvasData = {

@@ -6,11 +6,12 @@ import { convertToCanvasDataUrl, convertToPDF } from './plugins/converters';
 export const convert = async ({ element, options }: Convert) => {
   const mergedOptions: ConvertOptions = { ...DEFAULT_OPTIONS, ...options };
 
-  const { dataUrl, height, width } = await convertToCanvasDataUrl(element, mergedOptions);
+  const { dataUrl, height, width, hyperlinks } = await convertToCanvasDataUrl(element, mergedOptions);
 
   const conversionData: ConversionData = {
     canvasData: { dataUrl, width, height },
     options: { ...mergedOptions },
+    hyperlinks,
   };
 
   try {

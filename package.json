@@ -1,10 +1,10 @@
 {
   "name": "html2pdfx",
   "private": false,
-  "version": "0.1.2",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
+  "version": "0.1.3",
+  "main": "dist/html2pdfx.cjs.js",
+  "module": "dist/html2pdfx.es.js",
+  "types": "dist/html2pdfx.d.ts",
   "type": "module",
   "files": [
     "dist"
@@ -28,6 +28,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
+    "rollup-plugin-visualizer": "^5.14.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.25.0",
     "vite": "^6.2.0",
